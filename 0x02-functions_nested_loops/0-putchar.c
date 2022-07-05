@@ -12,17 +12,13 @@
  **/
 
 int main(void)
-
 {
-_putchar('_');
-_putchar('p');
-_putchar('u');
-_putchar('t');
-_putchar('c');
-_putchar('h');
-_putchar('a');
-_putchar('r');
-_putchar('\n');
+	char message[] = "_putchar";
 
-return (0);
+	for (int count = 0; count < sizeof(message); count++)
+	{
+		putchar(message[count]);
+	}
+	putchar('\n');
+	return (0);
 }
