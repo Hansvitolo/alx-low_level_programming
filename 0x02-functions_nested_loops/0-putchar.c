@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- ** main - Entry point.
+ ** main - prints _putchar.
  *
  ** Description: write a program that prints "_putchar" followed by a new line.
  *
