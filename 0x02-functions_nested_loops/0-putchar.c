@@ -13,12 +13,14 @@
 
 int main(void)
 {
-	char message[] = "_putchar";
-
-	for (int count = 0; count < sizeof(message); count++)
-	{
-		putchar(message[count]);
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	putchar('\n');
 	return (0);
 }
