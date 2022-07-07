@@ -6,7 +6,7 @@
  * Return: Always (0)
  */
 
-main(void)
+int void print_alphabet(void)
 {
 
 char ch;
@@ -18,5 +18,5 @@ ch++;
 }
 _putchar('\n');
 
-return;
+return (0);
 }
