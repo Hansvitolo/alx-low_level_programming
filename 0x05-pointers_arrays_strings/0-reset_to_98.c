@@ -10,9 +10,7 @@
 void reset_to_98(int *n)
 {
 
-p = 98;
+int p = 98;
 n = &p;
-("Address of variable 'n': %p\n", &p);
-("Value of variable 'n': %p\n", *n);
 
 }
