@@ -2,7 +2,7 @@
 
 /**
  * print_rev - function that prints string in reverse
- * @s:
+ * @s: string to be printed
  *
  */
 
@@ -17,11 +17,12 @@ count++;
 s++;
 }
 
-do {
+while (count > 0)
+{
+s--;
 _putchar(*s);
 count--;
-s--;
-} while (count > 0);
+}
 
 _putchar('\n');
 
