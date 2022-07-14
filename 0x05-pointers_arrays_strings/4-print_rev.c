@@ -17,14 +17,11 @@ count++;
 s++;
 }
 
-while (count >= 0)
-{
-
+do {
 _putchar(*s);
 count--;
 s--;
-
-}
+} while (count > 0);
 
 _putchar('\n');
 
