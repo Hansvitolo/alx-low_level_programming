@@ -16,7 +16,14 @@ char *begin;
 char *end;
 char ch;
 
-l = strlen(s);
+char *p = s;
+
+while (*p != '\0')
+{
+p++;
+l++;
+}
+
 begin = s;
 end = s;
 for (i = 0; i < l - 1; i++)
