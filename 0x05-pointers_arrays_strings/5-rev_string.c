@@ -16,13 +16,7 @@ char *begin;
 char *end;
 char ch;
 
-char *p = s;
-
-while (*p != '\0')
-{
-p++;
-l++;
-}
+for(l = 0; s[l] != '\0'; ++l);
 
 begin = s;
 end = s;
