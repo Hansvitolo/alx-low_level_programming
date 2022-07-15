@@ -15,7 +15,8 @@ int i;
 char *begin;
 char *end;
 char ch;
-l = _strlen(s);
+
+l = strlen(s);
 begin = s;
 end = s;
 for (i = 0; i < l - 1; i++)
