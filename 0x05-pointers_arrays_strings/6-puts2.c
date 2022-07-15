@@ -1,19 +1,20 @@
 #include "main.h"
 
+#include <string.h>
+
 /**
- * puts2 - function for printing other characters from first
- * @str: function for printing
- *
+ * puts2 -> puts2 function
+ * @str: str parameter
  */
 
 void puts2(char *str)
 
 {
 
-while (*str != '\0')
-{
-_putchar(*str);
-str++;
-}
+int len, i;
+len = strlen(str);
+for (i = 0; i < len; i += 2)
+_putchar(str[i]);
+
 _putchar('\n');
 }
