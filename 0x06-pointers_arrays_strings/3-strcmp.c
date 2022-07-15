@@ -1,22 +1,25 @@
 #include "main.h"
 
 /**
- * _strcmp - compares two strings
- * @s1: first string to compare
- * @s2: second string to compare
+ * _puts - prints a string, followed by a new line.
+ * @str: input string.
  *
- * Return: less than 0 if s1 is less than s2, 0 if they're equal,
- * more than 0 if s1 is greater than s2
+ * Return: no return.
  */
 
-int _strcmp(char *s1, char *s2)
+void _puts(char *str)
 
 {
-while (*s1 == *s2)
+
+int count = 0;
+
+while (count >= 0)
 {
-if (*s1 == '\0')
-s1++;
-s2++;
+if (str[count] == '\0')
+										{
+_putchar('\n');
+break;										}
+_putchar(str[count]);
+count++;
 }
-return (*s1 - *s2);
 }
