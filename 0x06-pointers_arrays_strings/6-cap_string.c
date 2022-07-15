@@ -1,34 +1,24 @@
 #include "main.h"
 
 /**
- * cap_string - capitalizes everey word of a string
+ * puts2 - prints one char out of 2 of a string.
+ * @str: input string.
  *
- * @s: string to modify
- *
- * Return: the resulting string
+ * Return: no return.
  */
 
-char *cap_string(char *s)
+void puts2(char *str)
 
 {
 
-int i, j;
+int count = 0;
 
-char spe[13] = {' ', '\t', '\n', ',', ';', '.',
-'!', '?', '"', '(', ')', '{', '}'};
-for (i = 0; s[i] != '\0'; i++)
-{if (i == 0 && s[i] >= 'a' && s[i] <= 'z')
-s[i] -= 32;
-for (j = 0; j < 13; j++)
-										{
-										if (s[i] == spe[j])
-{if (s[i + 1] >= 'a' && 
-[i + 1] <= 'z')
-																														{
-																														s[i + 1] -= 32;
-																														}
-																				}																				}
+while (count >= 0)
+{
+if (str[count] == '\0')
+{
+_putchar('\n');break;																		}
+if (count % 2 == 0)
+_putchar(str[count]);								count++;
 }
-
-return (s);
 }
