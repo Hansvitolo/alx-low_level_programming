@@ -16,7 +16,7 @@ char *begin;
 char *end;
 char ch;
 
-for(l = 0; s[l] != '\0'; ++l);
+for (l = 0; s[l] != '\0'; ++l);
 
 begin = s;
 end = s;
